@@ -1,4 +1,4 @@
-defmodule NervesSystemRpi0.MixProject do
+defmodule PythonRpi0.MixProject do
   use Mix.Project
 
   @app :nerves_system_rpi0
@@ -35,7 +35,7 @@ defmodule NervesSystemRpi0.MixProject do
     [
       type: :system,
       artifact_sites: [
-        {:github_releases, "nerves-project/#{@app}"}
+        {:github_releases, "heeton/#{@app}"}
       ],
       build_runner_opts: build_runner_opts(),
       platform: Nerves.System.BR,
@@ -66,7 +66,7 @@ defmodule NervesSystemRpi0.MixProject do
     [
       files: package_files(),
       licenses: ["Apache 2.0"],
-      links: %{"GitHub" => "https://github.com/nerves-project/#{@app}"}
+      links: %{"GitHub" => "https://github.com/heeton/#{@app}"}
     ]
   end
 
